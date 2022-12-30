@@ -1,0 +1,6 @@
+
+video(1)$http://nft.cssfwl.cn/m3u8/1671700333618.m3u8
+video(4)$http://nft.cssfwl.cn/m3u8/1671700659311.m3u8
+video(4)$http://nft.cssfwl.cn/m3u8/1671700803382.m3u8
+video(4)$http://nft.cssfwl.cn/m3u8/1671700938273.m3u8
+video(4)$http://nft.cssfwl.cn/m3u8/1671701069339.m3u8
