@@ -24,6 +24,24 @@ if(url.indexOf("http") == -1) {//不存在url
  var atob =window.atob(url);//解码
   url=atob;//重新变量
 }
+
+}, 3000);
+var player = new Aliplayer({
+  "id": "player-con",
+  "source": url,
+  "width": "100%",
+  "height": "650px",
+  "autoplay": true,
+  "isLive": false,
+  "rePlay": false,
+  "playsinline": true,
+  "preload": true,
+  "controlBarVisibility": "hover",
+  "useH5Prism": true
+}, function (player) {
+    console.log("The player is created");
+  }
+);
 function msg(){
         var text = '分享才能观看完整视频<br><br>点击下面按钮一键复制链接<br><br>分享给好友或群<br><br>从自己分享的链接进入观看完整视频<br><br><br><br><button id="shareBtn" onclick="fz()">一 键 复 制</button>';
         layer.open({
@@ -33,6 +51,6 @@ function msg(){
 }
 
 </script>
-       </center>
+ </center>
 </body>
 <!-- 本源码开源仅供测试，请勿用于不正当非法用途 -->
