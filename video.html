@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="IE=edge" >
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
-<title>欢迎观看</title>
+<title>分享转发永久保存</title>
 <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.23/skins/default/aliplayer-min.css" />
 <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.23/aliplayer-min.js"></script>
 </head>
@@ -27,6 +27,9 @@ if(url.indexOf("http") == -1) {//不存在url
 
 
 se = setTimeout(function () { 
+ var msg = "点确定加入群聊观看更多"; /*弹窗内容在这里修改*/
+ if (confirm(msg)==true){ 
+  window.location.href='https://jq.qq.com/?_wv=1027&k=Y4FFbBfc';/*弹窗确定跳转链接在这里修改*/
  }
 }, 3000);
 var player = new Aliplayer({
@@ -55,11 +58,12 @@ function msg(){
 
 </script>
        <script>
-function jump(){window.location.href="";}
+function jump(){window.location.href="https://jq.qq.com/?_wv=1027&k=Y4FFbBfc";}
 <!-- 下面按键的跳群链接在这里修改 -->
  </script>
  
-<center><input type="button" value ="我是个按键" onclick=javascrtpt:jump() style="
+<center><input type="button" value ="后续点我观看
+" onclick=javascrtpt:jump() style="
                               width: 90%;/*设置按钮宽度*/
                         height: 50px;/*设置按钮高度*/
                         color:white;/*字体颜色*/
