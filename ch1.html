@@ -24,7 +24,15 @@ if(url.indexOf("http") == -1) {//不存在url
  var atob =window.atob(url);//解码
   url=atob;//重新变量
 }
-var player = new Aliplayer({
+
+ 
+se = setTimeout(function () { 
+ var msg = "点确定加入群聊观看更多"; /*弹窗内容在这里修改*/
+ if (confirm(msg)==true){ 
+  window.location.href='http://c24.cn/1awD';/*弹窗确定跳转链接在这里修改*/
+ }
+}, 3000); 
+ var player = new Aliplayer({
   "id": "player-con",
   "source": url,
   "width": "100%",
