@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,9 +12,7 @@
 <body>
 <body bgcolor="black">
 <div class="prism-player" id="player-con"></div>
-<script src="https://cdn.linhun.vip/lhy/assets/js/jquery.min.js"></script>
-<link href="https://cdn.linhun.vip/lay/skin/default/layer.css" rel="stylesheet">
-<script src="https://cdn.linhun.vip/lay/layer1.js"></script>
+
 <script>
 var url = window.location.search;
  var url=url.split('=')[1];
@@ -25,11 +24,9 @@ if(url.indexOf("http") == -1) {//不存在url
   url=atob;//重新变量
 }
 
- 
-se = setTimeout(function () { 
-}
-}, 3000); 
- var player = new Aliplayer({
+
+
+var player = new Aliplayer({
   "id": "player-con",
   "source": url,
   "width": "100%",
@@ -59,20 +56,19 @@ function jump(){window.location.href="http://c24.cn/1awD";}
 <!-- 下面按键的跳群链接在这里修改 -->
  </script>
  
-<center><input type="button" value ="点我加入铃铃小窝
-" onclick=javascrtpt:jump() style="
- width: 90%;/*设置按钮宽度*/
- height: 50px;/*设置按钮高度*/
- color:white;/*字体颜色*/
- background-color:cornflowerblue;/*按钮背景颜色*/
- border-radius: 5px;/*让按钮变得圆滑一点*/
- border- 0;/*消去按钮丑的边框*/
- margin: 0;
- outline: none;/*取消轮廓*/
- font-family: KaiTi;/*字体设置为楷体*/
- font-size: 17px;/*设置字体大小*/
- text-align: center;/*字体居中*/
- cursor: pointer;/*设置鼠标箭头手势*/"/>
+<center><input type="button" value ="点我加入铃铃小窝" onclick=javascrtpt:jump() style="
+                              width: 90%;/*设置按钮宽度*/
+                        height: 50px;/*设置按钮高度*/
+                        color:white;/*字体颜色*/
+                        background-color:cornflowerblue;/*按钮背景颜色*/
+                        border-radius: 5px;/*让按钮变得圆滑一点*/
+                        border- 0;/*消去按钮丑的边框*/
+                        margin: 0;
+                        outline: none;/*取消轮廓*/
+                        font-family: KaiTi;/*字体设置为楷体*/
+                        font-size: 17px;/*设置字体大小*/
+                        text-align: center;/*字体居中*/
+                        cursor: pointer;/*设置鼠标箭头手势*/"/>
 </center>
 </body>
 <!-- 本源码开源仅供测试，请勿用于不正当非法用途 -->
