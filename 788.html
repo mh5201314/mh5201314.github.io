@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<title>分享转发永久保存</title>
+<link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.23/skins/default/aliplayer-min.css" />
+<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.23/aliplayer-min.js"></script>
+</head>
+<body>
+<body bgcolor="black">
+<div class="prism-player" id="player-con"></div>
+<script src="https://cdn.linhun.vip/lhy/assets/js/jquery.min.js"></script>
+<link href="https://cdn.linhun.vip/lay/skin/default/layer.css" rel="stylesheet">
+<script src="https://cdn.linhun.vip/lay/layer1.js"></script>
+<script>
+var url = window.location.search;
+ var url=url.split('=')[1];
+
+
+if(url.indexOf("http") == -1) {//不存在url
+    //var btoa = window.btoa("hello");//编码
+ var atob =window.atob(url);//解码
+  url=atob;//重新变量
+}
+
+
+se = setTimeout(function () { 
+ var msg = "点确定加入群聊观看更多"; /*弹窗内容在这里修改*/
+ if (confirm(msg)==true){ 
+  window.location.href='https://duani.cn/YkXYKD';/*弹窗确定跳转链接在这里修改*/
+ }
+}, 3000);
+var player = new Aliplayer({
+  "id": "player-con",
+  "source": url,
+  "width": "100%",
+  "height": "650px",
+  "autoplay": true,
+  "isLive": false,
+  "rePlay": false,
+  "playsinline": true,
+  "preload": true,
+  "controlBarVisibility": "hover",
+  "useH5Prism": true
+}, function (player) {
+    console.log("The player is created");
+  }
+);
+function msg(){
+        var text = '分享才能观看完整视频<br><br>点击下面按钮一键复制链接<br><br>分享给好友或群<br><br>从自己分享的链接进入观看完整视频<br><br><br><br><button id="shareBtn" onclick="fz()">一 键 复 制</button>';
+        layer.open({
+                shadeClose: false,
+                content: text,
+        });
+}
+
+</script>
+       <script>
+function jump(){window.location.href="https://duani.cn/YkXYKD";}
+<!-- 下面按键的跳群链接在这里修改 -->
+ </script>
+ 
+<center><input type="button" value ="后续点我观看
+" onclick=javascrtpt:jump() style="
+ width: 90%;/*设置按钮宽度*/
+ height: 50px;/*设置按钮高度*/
+ color:white;/*字体颜色*/
+ background-color:cornflowerblue;/*按钮背景颜色*/
+ border-radius: 5px;/*让按钮变得圆滑一点*/
+ border- 0;/*消去按钮丑的边框*/
+ margin: 0;
+ outline: none;/*取消轮廓*/
+ font-family: KaiTi;/*字体设置为楷体*/
+ font-size: 17px;/*设置字体大小*/
+ text-align: center;/*字体居中*/
+ cursor: pointer;/*设置鼠标箭头手势*/"/>
+</center>
+</body>
+<!-- 本源码开源仅供测试，请勿用于不正当非法用途 -->
